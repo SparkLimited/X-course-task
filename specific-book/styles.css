@@ -1,0 +1,122 @@
+html, body  {
+    margin: 0; /*  Відстань між межами елемента та сусідніми елементами або межами його контейнера. Зовнішній відступ. */
+    padding: 0; /* Відстань між вмістом елемента та його межами. Внутрішній відступ. */
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* Container for the whole page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "Arial", sans-serif;
+}
+
+/* Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+header button {
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+/* Main content area */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/* Стилі для зображення */
+.book-cover {
+    width: 100px; /*Встановіть необхідний розмір */
+    height: auto;
+    float: left; /* Зміщення зображення вліво */
+    margin-right: 20px; /*  Відступ справа */
+    margin-left: 0px; /* Відступ зліва */
+}
+
+/* Book image */
+.book-image img {
+    max-width: 300px;
+    width: 200px;
+    height:300px;
+}
+
+/* Book details */
+.book-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.book-details h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.book-details p {
+    margin-bottom: 5px;
+}
+
+.book-details .tags {
+    margin-bottom: 20px;
+}
+
+/* Price and cart section */
+.price-cart {
+    border: 1px dashed #ccc;
+    padding: 12px;
+    text-align: left;
+    width: 200px;
+}
+
+/* Стилі для кошика */
+.cart-icon {
+    width: 24px; /* Розмір кошика */
+    height: auto;
+    margin-left: 10px; /* Відступ зліва */
+}
+
+.price-cart .price,
+.price-cart .count,
+.price-cart .total-price {
+    margin-bottom: 20px;
+}
+
+.price-cart button {
+    padding: 10px 20px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#quantity {
+    width: 50px;
+    text-align: center;
+}
